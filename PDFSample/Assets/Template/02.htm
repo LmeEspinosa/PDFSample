@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div id="container" style="width:646px;">
+        <div class="ncolumnelementl" style="top:10px;"><span class="normalmuychica" style="color:#DBDCE2;">SECRETO</span></div>
+        <div id="masterheader nomargin">
+            <div id="logoplanovalo">
+                <img src="{{APPLICATIONROOT}}images/LogoPlanOvalo.png"  style="width:120px;" />
+            </div>
+            <div id="headerdireccion">
+                <span class="boldmediana">
+                    Plan Ovalo S.A<br />
+                    de Ahorro para Fines Determinados<br />
+                </span>
+                <span class="normalchica">
+                    Av.Henry Ford 3295 (B1610BKK) R.Rojas<br />
+                    (Ex Gral. Pacheco) Pcia. de Bs.As.
+                </span>
+            </div>
+            <div id="headernrosolicitud">
+                <div class="marco">
+                    SOLICITUD DE ADHESI&Oacute;N N&ordm;
+                </div>
+                <div class="marco NroSolicitudGrande">
+                    {{NSOLICITUD}}
+                </div>
+            </div>
+        </div>
+        <div id="titulos">
+            <div id="datoscomplementarios_tituloprincipal" class="subrayado anexosbonificacion_titulo_anexo">
+                <span>DATOS COMPLEMENTARIOS DEL SOLICITANTE</span>
+            </div>
+        </div>
+        <div class="datoscomplementarios_cuerpodatos">
+            <table style="margin: auto"  border="1" cellspacing="0" cellpadding="0"  style="border-collapse:collapse;border:none;">
+				<tr>
+					<td colspan="4" valign="top" style="border:solid windowtext 1.0pt;">
+						<p>
+							<span class="normalmuychica">Apellido y Nombre</span>
+						</p>
+						<p>
+							<span class="datovalor">{{APELLIDONOMBRE}}</span>
+						</p>
+					</td>
+					<td colspan="4" valign="top" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;">
+						<p><span class="normalmuychica">Documento de identidad <span>(<span id="{{IMPRESIONCODE}}DC_TIPODOC_DN" class="tachado">DNI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_CI" class="tachado">CI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_LE" class="tachado">LE</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_LC" class="tachado">LC</span>)</span>:</span></p>
+                    	<p><span class="datovalor">{{NDOCUMENTO}}</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" valign="top" style="border:solid windowtext 1.0pt;border-top:none;">
+						<div class="normalmuychica">Sexo</div>
+						<div class="marco datovalor" style="margin:2px;width:95px;">
+                            <ul class="listarchecker">
+                                <li><div class="lielement">
+                                        <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_SEXO_M"></div>
+                                        <div class="floatleft alturafija"><div class="datovalor paddingleft">MASCULINO</div></div>
+                                    </div>
+                                </li>
+                                <li><div class="lielement">
+                                        <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_SEXO_F"></div>
+                                        <div class="floatleft alturafija"><div class="datovalor paddingleft">FEMENINO</div></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+					</td>
+					<td colspan="2" valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+						<p><span class="normalmuychica">Fecha de Nacimiento:</span></p>
+						<p><span class="datovalor">{{FECHANAC}}</span></p>
+					</td>   					 					 					
+					<td colspan="2" valign="top" style="border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+						<p><span class="normalmuychica">Lugar de nacimiento:</span></p>
+						<p><span class="datovalor">{{LUGARNACIMIENTO}}</span></p>
+					</td>   					 					 					
+					<td colspan="2" valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;">
+						<p><span class="normalmuychica">Nacionalidad:(especificar)</span></p>
+						<p><span class="datovalor">{{NACIONALIDAD_ESPECIFICAR}}</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" rowspan="3" valign="top" style="border:solid windowtext 1.0pt;   border-top:none;   ">
+						<div class="normalmuychica">Est. Civil:</div>
+						<div class="ncolumnelementl" id="datoscomplementarios_estadocivil">
+                <div class="marco datovalor">
+                    <ul class="listarchecker">
+                        <li><div class="lielement">
+                                <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_S"></div>
+                                <div class="floatleft alturafija"><div class="datovalor paddingleft">SOLTERO</div></div>
+                            </div>
+                        </li>
+                        <li><div class="lielement">
+                                <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_C"></div>
+                                <div class="floatleft alturafija"><div class="datovalor paddingleft">CASADO</div></div>
+                            </div>
+                        </li>
+                        <li><div class="lielement">
+                                <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_D"></div>
+                                <div class="floatleft alturafija"><div class="datovalor paddingleft">DIVORCIADO</div></div>
+                            </div>
+                        </li>
+                        <li><div class="lielement">
+                                <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_V"></div>
+                                <div class="floatleft alturafija"><div class="datovalor paddingleft">VIUDO</div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="clear:both;padding 3px;">
+    						<span class="normalmuychica">N° de Personas a su cargo:</span>					
+    						<div class="bigsquare" style="margin:2px;">
+    							<p>
+    								<span class="datovalor">{{NROPERSONASASUCARGO}}</span>
+    							</p>
+    						</div>
+            </div>						
+					</td>
+					<td colspan="7" valign="top" style="border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">
+						<p><span class="normalmuychica">Nombre del Cónyuge:</span></p>
+						<p><span class="datovalor">{{NOMBRECONYUGE}}</span></p>
+					</td>
+			</tr>
+			<tr>
+					<td valign="top" style="border-top:none;border-left:none;   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">
+						<p class="normalmuychica"><span>Documento de identidad del cónyuge</span><span>(<span id="{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_DN" class="tachado">DNI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_CI" class="tachado">CI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_LE" class="tachado">LE</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_LC" class="tachado">LC</span>):</span></p><p><span class="datovalor">{{NRODOCCONYUGE}}</span></p>
+					</td>
+					<td valign="top" style="border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">
+						<p><span class="normalmuychica">Fecha de Nacimiento   del cónyuge:</span></p>
+						<p><span class="datovalor">{{FECHANACCONYUGE}}</span></p>
+					</td>   					 					 					
+					<td valign="top" colspan="2" style="width: 104px;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">
+						<p><span class="normalmuychica">Ocupación del Cónyuge</span></p>
+						<p><span class="datovalor">{{OCUPACIONCONYUGE}}</span></p>
+					</td>   					 					 					
+					<td valign="top" colspan="2" style="border-top:none;border-left:none;   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;      ">
+						<p><span class="normalmuychica">Ingresos del cónyuge:</span></p>
+						<p><span class="datovalor">{{INGRESOSCONYUGE}}</span></p>
+					</td>
+				</tr>
+				<tr>   					 					 					
+					<td colspan="2" valign="top" style="border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">
+						<p><span class="normalmuychica">Tiempo de residencia en su domicilio actual:</span>
+						<p><span class="datovalor">{{TIEMPORESIDENCIADOMACTUAL}}</span></p>
+						</p>
+					</td>   					 					 					
+					<td colspan="4" valign="top" style="border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;      ">   						 						 						
+						<p><span class="normalmuychica">Ańos de residencia en dicha localidad:</span></p>
+						<p><span class="datovalor">{{ANIOSRESIDENCIALOCALIDAD}}</span></p>
+					</td>   					 					 								 				 				
+				</tr>
+				<tr>    					 					 					
+					<td colspan="4" valign="top" style="border:solid windowtext 1.0pt;   border-top:none;   ;">   						 						 						
+						<p><span class="normalmuychica">Apellido y nombre del pariente mas cercano:</span></p>   						 						 						
+						<p><span class="datovalor">{{APELLIDONOMBREPARIENTECERCANO}}</span></p>
+					</td>   					 					 					
+					<td colspan="4" valign="top" style="width: 239px;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;      ;">   						 						 						
+						<p><span class="normalmuychica">Parentesco:</span></p>
+						<p><span class="datovalor">{{PARENTESCO}}</span></p>
+					</td>   					 					 					 				 				 				
+				</tr>  				 				 				
+				<tr>   					 					 					
+					<td valign="top" colspan="3" style="border:solid windowtext 1.0pt;   border-top:none;   ;">   						 						 						
+						<p ><span class="normalmuychica">Domicilio de Pariente:</span></p>
+						<p><span class="datovalor">{{DOMICILIOPARIENTECERCANO}}</span></p>
+					</td>					 					 					
+					<td valign="top" colspan="2" style="border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ;">   						 						 						
+						<p><span class="normalmuychica">Teléfono del Pariente:</span></p>
+						<p><span class="datovalor">{{TELEFONOPARIENTECERCANO}}</span></p>
+					</td>
+					<td valign="top" colspan="3" style="border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.0pt;      ;">   						 						 						
+						<p><span class="normalmuychica">Observaciones:</span></p>
+						<p><span class="datovalor">&nbsp;</span></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="float:left">
+      <table style="margin: auto" cellspacing="0" cellpadding="0">
+        <tr><td><div><p><span class="boldmediana">Ingresos</span></p></div></td></tr>
+      </table>
+    </div>
+    <div class="datoscomplementarios_cuerpodatos">
+			<table style="margin: auto"  border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+				<tbody>			  				 				 				
+				<tr >   					 					 					
+					<td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;   ">   						 						 						
+						<p><span class="normalmuychica">Actividad</span></p>
+						<p><span class="datovalor">{{OCUPACION}}</span></p>
+					</td>   					 					 					
+					<td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;   border-left:none;">   						 						 						
+						<p><span  class="normalmuychica">Descripción</span></p>
+						<p><span class="datovalor">{{DESCRIPCIONOCUPACION}}</span></p>
+					</td>   					 					 					
+					<td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;   border-left:none;">   						 						 						
+						<p><span  class="normalmuychica">Cargo</span></p>
+						<p><span class="datovalor">{{CARGOCUPACION}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.1pt;border:solid windowtext 1.0pt;   border-left:none;">   						 						 						
+						<p><span  class="normalmuychica">Fecha de Ingreso o Comienzo de Actividad</span></p>
+						<p><span class="datovalor">{{FECHAINGRESOCUPACION}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.1pt;border:solid windowtext 1.0pt;   border-left:none;">   						 						 						
+						<p><span   class="normalmuychica">Teléfono Comercial</span></p>
+						<p><span class="datovalor">{{TELCOMERCIAL}}</span></p>
+					</td>  				 				 				
+				</tr>  				 				 				
+				<tr >   					 					 					
+					<td width=400 colspan=3 valign=top style="width:300.2pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<p><span  class="normalmuychica">Empleador o nombre Razon Social</span></p>   						 						 						
+						<p><span class="datovalor">{{EMPLEADORRAZONSOCIAL}}</span></p>
+					</td>   					 					 					
+					<td width=267 colspan=2 valign=top style="width:200.2pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p><span  class="normalmuychica">Domicilio</span></p>
+						<p><span class="datovalor">{{DOMICILIOEMPLEADOR}}</span></p>
+					</td>  				 				 				
+				</tr>  				 				 				
+				<tr >   					 					 					
+					<td width=133 valign=top style="width:100.05pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<p><span  class="normalmuychica">Ingresos Mensuales</span></p>   						 						 						
+						<p><span  class="datovalor">${{INGRESOMENSUAL}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.05pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p><span  class="normalmuychica">Sueldo</span></p>   						 						 						
+						<p><span  class="datovalor">${{SUELDO}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.1pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p><span class="normalmuychica">Otros Ingresos (Especificar)</span></p>   						 						 						
+						<p><span  class="datovalor">${{OTROSINGRESOS}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.1pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p><span  class="normalmuychica">Total de Ingresos Mensuales</span></p>   						 						 						
+						<p><span  class="datovalor">${{TOTALINGRESOSMENSUALES}}</span></p>
+					</td>   					 					 					
+					<td width=133 valign=top style="width:100.1pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p><span  class="normalmuychica">Patrimonio Neto S/Detalla por separado</span></p>   						 						 						
+						<p><span  class="datovalor">${{PATRIMONIONETO}}</span></p>
+					</td>  				 				 				
+				</tr>  				 				 				
+				<tr >   					 					 					
+					<td width=133 valign=top style="width:100.05pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<div  class="normalmuychica">Clase de Sociedad</div>													 														 							 							
+						<div class="ncolumnelementl">
+                            <div class="nomargin clasesociedad1 ncolumnelementl">
+                                <ul class="nomargin listarchecker">
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.C.</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.R.L.</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nomargin clasesociedad1 ncolumnelementl">
+                                <ul class="nomargin listarchecker">
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.C.A</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="nomargin  lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.A.</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					</td>   					 					 					
+					<td width=534 colspan=4 valign=top style="width:400.35pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<div style="clear:both;">							 								 								
+							<div class="normalmuychica" style="float:left;">Inscrip. En el Registro Público de Comercio de</div>													 						 						
+							<div class="rayabottom datovalor" style="float:left;min-width:100px;">&nbsp;<!-------------->{{REGPUBCOM}}</div>
+							<div class="normalmuychica" style="float:left">Fecha</div>
+							<div class="rayabottom datovalor" style="float:left;min-width:100px;">&nbsp;<!----------/-----/------>{{FECHAREGPUBCOM}}</div>
+						</div>
+						<div style="clear:both;">
+							<div class="normalmuychica" style="float:left;">Bajo el N°</div>
+							<div class="rayabottom datovalor" style="float:left;min-width:50px;">&nbsp;<!----------------------------------->{{NROREGPUBCOM}}</div>
+							<div class="normalmuychica"  style="float:left;">Al F°</div>
+							<div class="rayabottom datovalor" style="float:left;min-width:50px;">&nbsp;<!-------------->{{FREGPUBCOM}}</div>
+							<div class="normalmuychica" style="float:left;">Del Libro</div>
+							<div class="rayabottom datovalor" style="float:left;min-width:50px;">&nbsp;<!--------------->{{LIBREGPUBCOM}}</div>
+							<div class="normalmuychica" style="float:left">Tomo</div>
+							<div class="rayabottom datovalor" style="float:left;min-width:50px;">&nbsp;<!------------->{{TOMREGPUBCOM}}</div> 								 							 							 							
+						</div>
+					</td>  				 				 				
+				</tr>
+				</tbody>			 			 			
+			</table>
+		</div>
+		<div style="float:left">
+      <table style="margin: auto" cellspacing="0" cellpadding="0">
+        <tr><td><div><p><span class="boldmediana">Personas   Jurídicas – Apoderado, Representante Legal o Autoridad</span></p></div></td></tr>
+      </table>
+    </div>
+    <div class="datoscomplementarios_cuerpodatos">	
+			<table style="margin: auto"  border=1 cellspacing=0 cellpadding=0  style="border-collapse:collapse;border:none;">  				 				 				
+				<tbody>  				 				 				
+				<tr>   					 					 					
+					<td width=132 colspan="1" valign=top style="width:98.85pt;border:solid windowtext 1.0pt;">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Apellido y Nombre: 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p >							 							 							
+							<span class="datovalor">
+							{{APODERADO_APELLIDONOMBRE}}								 							 							 							
+							</span>						 						 						
+						</p>  </td>   					 					 					  					 					 					
+					<td width=132 valign=top rowspan="2" style="width:99.2pt;border-top:solid windowtext 1.0pt;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">   						 						 						
+						<div class="normalmuychica">Sexo</div>						
+						<div class="marco datovalor" style="margin:2px;width:95px;">
+                <ul class="listarchecker">
+                    <li><div class="lielement">
+                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_SEXO_APO_M"></div>
+                            <div class="floatleft alturafija"><div class="datovalor paddingleft">MASCULINO</div></div>
+                        </div>
+                    </li>
+                    <li><div class="lielement">
+                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_SEXO_APO_F"></div>
+                            <div class="floatleft alturafija"><div class="datovalor paddingleft">FEMENINO</div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>   						 						 						
+					</td>   					 					 					
+					<td width=132 colspan=4 rowspan="2" valign=top style="width:99.15pt;border-top:solid windowtext 1.0pt;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Fecha de Nacimiento: 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p>
+						<span class="datovalor">{{APODERADO_FECHANACIMIENTO}}</span>
+						</p>
+					</td>   					 					 					
+					<td width=139 colspan=1 rowspan="2" valign=top style="width:103.9pt;border-top:solid windowtext 1.0pt;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Lugar de nacimiento:</span>						 						 						
+						</p>
+						<p>
+							<span class="datovalor">{{APODERADO_LUGARNACIMIENTO}}</span>
+						</p>
+					</td>  				 				 				
+				</tr>
+        <tr>
+        <td width=132 colspan="1" valign=top style="border:solid windowtext 1.0pt;width:99.3pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Documento de identidad <span>(<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_DN" class="tachado">DNI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_CI" class="tachado">CI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_LE" class="tachado">LE</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_LC" class="tachado">LC</span>):</span>							 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p >							 							 							
+							<span class="datovalor">
+								{{APODERADO_NRODOC}}								 							 							 							
+							</span>						 						 						
+					</p>  </td> 
+        </tr>  				 				 				
+				<tr >   					 					 					
+					<td width=132 valign=top style="width:98.85pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">N° de CUIL: 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p>
+							<span class="datovalor">{{APODERADO_NROCUIL}}</span>
+						</p>
+					</td>   					 					 					
+					<td width=132 valign=top style="width:99.3pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Nacionalidad(especificar): 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p>
+							<span class="datovalor">{{APODERADO_NACIONALIDAD}}</span>
+						</p>
+					</td>   					 					 					
+					<td width=132 colspan="4" valign=top style="width:99.2pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Domicilio: 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p >							 							 							
+							<span class="datovalor">{{APODERADO_DOMICILIO}}</span>						 						 						
+						</p>
+					</td>   					 					 					
+					<td width=132 colspan=1 valign=top style="width:99.15pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Ciudad: 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p  style="text-align:justify">							 							 							
+							<span >								 							 							 							
+								<span class="datovalor">{{APODERADO_CIUDAD}}</span>
+							</span>						 						 						
+						</p>
+					</td>   					 					 					 				 				 				
+				</tr>  				 				 				
+				<tr >   					 					 					
+					<td width=264 colspan=1 valign=top style="width:106.15pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Provincia: 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p >							 							 							
+							<span class="datovalor">{{APODERADO_PROVINCIA}}</span>						 						 						
+						</p>  </td> 
+          <td width=264 colspan=1 valign=top style="width:116.15pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">CP: 								 							 							 							
+							</span>						 						 						
+						</p>   						 						 						
+						<p >							 							 							
+							<span class="datovalor">{{APODERADO_CP}}</span>						 						 						
+						</p>  </td>   					 					 					
+					<td width=201 colspan=4 valign=top style="width:151.1pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Teléfono Particular y Celular: 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p >							 							 							
+							<span class="datovalor">{{APODERADO_TELPARTICULAR}} / {{APODERADO_CEL}}</span>						 						 						
+						</p>
+					</td>   					 					 					
+					<td width=202 colspan=1 valign=top style="width:113.15pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">e-mail: 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p >							 							 							
+							<span class="datovalor">{{APODERADO_EMAIL}}</span>						 						 						
+						</p>  
+					</td>  				 				 				
+				</tr>  				 				 				
+				<tr >   					 					 					
+					<td width=132 rowspan=2 valign=top style="width:98.85pt;border:solid windowtext 1.0pt;   border-top:none;   ">   						 						 						
+						<div class="normalmuychica">Est. Civil:</div>
+						<div class="ncolumnelementl" id="datoscomplementarios_estadocivil">
+                            <div class="marco datovalor">
+                                <ul class="listarchecker">
+                                    <li><div class="lielement">
+                                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_S"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">SOLTERO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_C"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">CASADO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_D"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">DIVORCIADO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div class="simulacheckbox floatleft" id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_V"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">VIUDO</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>   						 						 						
+					</td>   					 					 					
+					<td width=132 colspan=6 valign=top style="width:99.3pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Nombre del Cónyuge: 								 							 							 							
+							</span>						 						 						
+						</p>
+						<p>							 							 							
+							<span class="datovalor">{{APODERADO_CONYUGE_NOMBRE}}</span>						 						 						
+						</p>
+					</td>
+        </tr>   
+        <tr>  					 					 					
+					<td width=132 valign=top style="width:99.2pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p >							 							 							
+							<span class="normalmuychica">Documento de identidad del cónyuge <span>(<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_DN" class="tachado">DNI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_CI" class="tachado">CI</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_LE" class="tachado">LE</span>/<span id="{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_LC" class="tachado">LC</span>):</span></span>						 						 						
+						</p>
+						<p>							 							 							
+							<span class="datovalor">{{APODERADO_CONYUGE_DOCUMENTO_NRO}}</span>						 						 						
+						</p>								 								 								
+					</td>   					 					 					
+					<td width=132 colspan=2 valign=top style="width:58.15pt;border-top:none;   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Fecha de Nacimiento del cónyuge:</span>						 						 						
+						</p>
+						<p>							 							 							
+							<span class="datovalor">{{APODERADO_CONYUGE_FECHANACIMIENTO}}</span>						 						 						
+						</p>
+					</td>   					 					 					
+					<td width=72 colspan="2" valign=top style="width:54.15pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Ocupación del   Cónyuge</span>						 						 						
+						</p>
+						<p>							 							 							
+							<span class="datovalor">{{APODERADO_CONYUGE_OCUPACION}}</span>						 						 						
+						</p>	
+					</td>   					 					 					
+					<td width=66 colspan="1" valign=top style="width:49.75pt;border-top:none;border-left:   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;      ">   						 						 						
+						<p>							 							 							
+							<span class="normalmuychica">Ingresos del cónyuge:</span>						 						 						
+						</p>
+						<p>							 							 							
+							<span class="datovalor">{{APODERADO_CONYUGE_INGRESO}}</span>						 						 						
+						</p>
+					</td>  				 				 				
+				</tr>
+				</tbody>  				 							 			 			
+			</table>
+		</div>	
+        <div id="footer" style="margin:0px;">
+            <div class="datoscomplementarios_cuerpodatos">
+                <span class="normalmuychica">
+                    "El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+                    gratuita a intervalos no inferiores a seis meses, salvo que se acredite un inter&eacute;s leg&iacute;timo al efecto conforme los
+                    establecido en el art&iacute;culo 14, inciso 3 de la ley N&ordm; 25.326. LA DIRECCI&Oacute;N NACIONAL DE PROTECCI&Oacute;N DE DATOS
+                    PERSONALES, &Oacute;rgano de Control de la Ley N&ordm; 25.326, tiene la atribuci&oacute;n de atender las denuncias y reclamos
+                    que se interpongan con relaci&oacute;n al incumplimiento de las normas sobre protecci&oacute;n de datos personales"
+                </span>
+            </div>
+            <div class="datoscomplementarios_cuerpodatos">
+                <span class="normalmuychica">
+                      A fin de cumplir con las disposiciones de la UIF en materia de Prevenci&oacute;n de Lavado de Dinero se exigir&aacute; para el procesamiento de la solicitud que la totalidad de la informaci&oacute;n requerida en el presente anexo se encuentre completa.
+                </span>
+            </div>
+            <div id="declara" style="width:250px;">
+                <div class="normalchica">
+                    PO-7413
+                </div>
+            </div>
+            <div class="ncolumncontainer" style="width:380px;">
+                <div class="texto" style="width:380px;">
+                    <div class="margintopchico ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Firma:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:277px;">&nbsp;</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Aclaraci&oacute;n:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:258px;text-align:left;">&nbsp;{{APELLIDONOMBRE}}</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Tipo y Nro. de documento:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:191px;text-align:left;">&nbsp;{{TIPOYNRODOCUMENTO}}</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+  </body>
+</html>
+<script language="Javascript">
+    function dom_objDatosCom(strID){
+        return document.getElementById(strID);
+    }
+//     if(dom_objDatosCom('SEXO_{{SEXO}}')){dom_objDatosCom('SEXO_{{SEXO}}').checked='checked';}
+//     if(dom_objDatosCom('ESTADOCIVIL_{{ESTADOCIVIL}}')){dom_objDatosCom('ESTADOCIVIL_{{ESTADOCIVIL}}').checked="checked";}
+//     if(dom_objDatosCom('TIPODOCUMENTO_{{TIPODOCUMENTO}}')){dom_objDatosCom('TIPODOCUMENTO_{{TIPODOCUMENTO}}').checked="checked";}
+//     if(dom_objDatosCom('NACIONALIDAD_{{NACIONALIDAD}}')){dom_objDatosCom('NACIONALIDAD_{{NACIONALIDAD}}').checked="checked";}
+//     if(dom_objDatosCom('CONDICIONIVA_{{CONDICIONIVA}}')){dom_objDatosCom('CONDICIONIVA_{{CONDICIONIVA}}').checked="checked";}
+
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_{{SEXO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_{{SEXO}}').appendChild(document.createTextNode("X"));}
+//     if(dom_objDatosCom('DC_TIPODOCUMENTO_{{TIPODOCUMENTO}}')){dom_objDatosCom('DC_TIPODOCUMENTO_{{TIPODOCUMENTO}}').appendChild(document.createTextNode("X"));}
+    //if(dom_objDatosCom('{{IMPRESIONCODE}}DC_NACIONALIDAD_{{NACIONALIDAD}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_NACIONALIDAD_{{NACIONALIDAD}}').appendChild(document.createTextNode("X"));}
+    //if(dom_objDatosCom('{{IMPRESIONCODE}}DC_CONDICIONIVA_{{CONDICIONIVA}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_CONDICIONIVA_{{CONDICIONIVA}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_{{ESTADOCIVIL}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_{{ESTADOCIVIL}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}').className = dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}').className.replace("tachado","");}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_{{TIPODOCUMENTOCONYUGE}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_{{TIPODOCUMENTOCONYUGE}}').className = dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_CONYUGE_{{TIPODOCUMENTOCONYUGE}}').className.replace("tachado","");}
+    
+    /*Apoderados*/
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_{{APODERADO_ESTADOCIVIL}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_APO_{{APODERADO_ESTADOCIVIL}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_{{APODERADO_TIPODOCUMENTO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_{{APODERADO_TIPODOCUMENTO}}').className = dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_{{APODERADO_TIPODOCUMENTO}}').className.replace("tachado","");}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_APO_{{APODERADO_SEXO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_APO_{{APODERADO_SEXO}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_{{APODERADO_CONYUGE_DOCUMENTO_TIPO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_{{APODERADO_CONYUGE_DOCUMENTO_TIPO}}').className = dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_APO_CON_{{APODERADO_CONYUGE_DOCUMENTO_TIPO}}').className.replace("tachado","");}
+     
+</script>

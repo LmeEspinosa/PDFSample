@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div id="container" style="width:646px;">
+        <div class="ncolumnelementl" style="top:10px;"><span class="normalmuychica" style="color:#DBDCE2;">SECRETO</span></div>
+        <div id="masterheader nomargin">
+            <div id="logoplanovalo">
+                <img src="{{APPLICATIONROOT}}images/LogoPlanOvalo.png"  style="width:120px;" />
+            </div>
+            <div id="headerdireccion">
+                <span class="boldmediana">
+                    Plan Ovalo S.A<br />
+                    de Ahorro para Fines Determinados<br />
+                </span>
+                <span class="normalchica">
+                    Av.Henry Ford 3295 (B1610BKK) R.Rojas<br />
+                    (Ex Gral. Pacheco) Pcia. de Bs.As.
+                </span>
+            </div>
+            <div id="headernrosolicitud">
+                <div class="marco">
+                    SOLICITUD DE ADHESI&Oacute;N N&ordm;
+                </div>
+                <div class="marco NroSolicitudGrande">
+                    {{NSOLICITUD}}
+                </div>
+            </div>
+        </div>
+        <div id="titulos">
+            <div id="datoscomplementarios_tituloprincipal">
+                <span>DATOS COMPLEMENTARIOS DEL SOLICITANTE</span>
+            </div>
+        </div>
+        <div class="datoscomplementarios_cuerpodatos">
+            <div class="ncolumncontainer">
+                <div id="datoscomplementarios_cuerpodatos2" class="ncolumnelementl">
+                    <div class="clearr ncolumnelementl">
+                        <div class="ncolumnelementl" style="width:409px;text-align:left;">
+                            <div class="normalmuychica">Apellido y nombre</div>
+                            <div class="rayabottom datovalor">{{APELLIDONOMBRE}}</div>
+                        </div>
+                    </div>
+                    <div id="datoscomplementarios_cuerpodatos1" class="clearl ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor" style="width:124px;">{{DOMICILIO}}</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">CIUDAD</div>
+                            <div class="rayabottom datovalor" style="width:96px;">{{LOCALIDAD}}</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div id="provincia" class="clearr ncolumnelementl">
+                                <div class="ncolumnelementl">
+                                    <div class="normalmuychica">PROVINCIA</div>
+                                </div>
+                                <div class="ncolumnelementr">
+                                    <div class="rayabottom datovalor" style="width:118px;">{{PROVINCIA}}</div>
+                                </div>
+                            </div>
+                            <div id="codpostal" class="clearl ncolumnelementl">
+                                <div class="ncolumnelementl">
+                                    <div class="normalmuychica">COD. POSTAL</div>
+                                </div>
+                                <div class="ncolumnelementr">
+                                    <div class="rayabottom datovalor" style="width:110px;">{{CODIGOPOSTAL}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncolumnelementl">
+                    <div class="normalmuychica">DOCUMENTO DE IDENTIDAD</div>
+                    <div class="clearr ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">C.I.N&ordm;</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">EXP. POR</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div id="raya_exppor" class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="clearl ncolumnelementl" style="width:180px;">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">
+                                <span id="{{IMPRESIONCODE}}DC_TIPODOC_DN" class="tachado">DNI</span>/
+                                <span id="{{IMPRESIONCODE}}DC_TIPODOC_CI" class="tachado">CI</span>/
+                                <span id="{{IMPRESIONCODE}}DC_TIPODOC_LE" class="tachado">LE</span>/
+                                <span id="{{IMPRESIONCODE}}DC_TIPODOC_LC" class="tachado">LC</span>
+                            </div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="rayabottom datovalor alturafija" style="width:120px;">{{NDOCUMENTO}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="datoscomplementarios_cuerpodatos">
+            <div class="ncolumncontainer">
+                <div class="rayabottom ncolumncontainer">
+                    <div class="alturacompleta1 nomargin rayaright ncolumnelementl">
+                        <div id="datoscomplementarios_sexo" class="ncolumnelementl">
+                            <div class="normalmuychica">Sexo</div>
+                            <div class="marco datovalor">
+                                <ul class="listarchecker">
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_SEXO_M" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">MASCULINO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_SEXO_F" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">FEMENINO</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="ncolumnelementl">
+                                <div class="normalmuychica">FECHA NAC.</div>
+                                <div class="rayabottom datovalor" style="width:70px;height:14px">{{FECHANAC}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alturacompleta1 nomargin rayaright ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">EST. CIVIL</div>
+                        </div>
+                        <div id="datoscomplementarios_estadocivil" class="ncolumnelementl">
+                            <div class="marco datovalor">
+                                <ul class="listarchecker">
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_S" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">SOLTERO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_C" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">CASADO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_D" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">DIVORCIADO</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="lielement">
+                                            <div id="{{IMPRESIONCODE}}DC_ESTADOCIVIL_V" class="simulacheckbox floatleft"></div>
+                                            <div class="floatleft alturafija"><div class="datovalor paddingleft">VIUDO</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="alturacompleta1 nomargin rayaright ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">NACIONALIDAD.</div>
+                            <div class="rayabottom datovalor" style="width:70px;height:14px;">{{NACIONALIDAD}}</div>
+                        </div>
+                    </div>
+                    <div class="ncolumnelementl">
+                        <div class="clearr ncolumnelementl">
+                            <div class="ncolumnelementl">
+                                <div id="nrodepersonasasucargo_titulo" class="normalmuychica">N&Uacute;MERO DE PERSONAS A SU CARGO</div>
+                            </div>
+                            <div class="ncolumnelementl">
+                                <div class="bigsquare">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="ncolumnelementl" style="width:100px;">
+                            <div class="normalmuychica">TEL&Eacute;FONO PARTICULAR</div>
+                            <div class="rayabottom datovalor  alturafija">{{TELEFONOPARTICULAR}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rayabottom ncolumncontainer">
+                    <div class="nomargin rayaright ncolumnelementl alturacompleta2" >
+                        <div class="ncolumnelementl">
+                            <div id="tiempoderesidenciadomicilio_titulo" class="normalmuychica">TIEMPO DE RESIDENCIA EN DOMICILIO ACTUAL</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="ncolumnelementl"><div class="bigsquare">&nbsp;</div></div>
+                            <div class="ncolumnelementl"><div class="normalmuychica">A&Ntilde;OS</div></div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="ncolumnelementl"><div class="bigsquare">&nbsp;</div></div>
+                            <div class="ncolumnelementl"><div class="normalmuychica">MESES</div></div>
+                        </div>        
+                    </div>
+                    <div class="nomargin rayaright ncolumnelementl alturacompleta2">
+                        <div class="ncolumnelementl">
+                            <div id="tiempoderesidencialocalidad_titulo" class="normalmuychica">A&Ntilde;OS DE RESIDENCIA EN DICHA LOCALIDAD</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="ncolumnelementl"><div class="bigsquare">&nbsp;</div></div>
+                            <div class="ncolumnelementl"><div class="normalmuychica">A&Ntilde;OS</div></div>
+                        </div>
+                    </div>
+                    <div class="nomargin ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">NOMBRE DEL C&Oacute;NYUGE</div>
+                            <div class="rayabottom datovalor alturafija" style="width:230px;">{{NOMBRECONYUGE}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncolumncontainer">
+                    <div class="ncolumnelementl">
+                        <div id="parientemascercano_apellidoynombre" class="ncolumnelementl">
+                            <div class="normalmuychica">APELLIDO Y NOMBRE DEL PARIENTE MAS CERCANO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div id="parientemascercano_parentesco" class="ncolumnelementl">
+                            <div class="normalmuychica">PARENTESCO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div id="parientemascercano_domicilio" class="ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div id="parientemascercano_telefono" class="ncolumnelementl">
+                            <div class="normalmuychica">TEL&Eacute;FONO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="datoscomplementarios_cuerpodatos">
+            <div class="rayabottom ncolumncontainer">
+                <div class="ncolumnelementl">
+                    <div class="clearr normalmuychica ncolumnelementl">PROPIETARIO</div>
+                    <div class="clearl ncolumnelementl">
+                        <div class="simulacheckbox floatleft"></div>
+                        <div class="floatleft alturafija"><div class="datovalor paddingleft">S&Iacute;</div></div>
+                    </div>
+                </div>
+                <div class="anchocompleto2 marco ncolumnelementr">
+                    <div class="ncolumcontainer">
+                        <div class="clearr anchocompleto1 ncolumnelementl">
+                            <div id="ubicacioninmueble" class="ncolumnelementl">
+                                <div class="normalmuychica">UBICACI&Oacute;N INMUEBLE</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div class="ncolumnelementl">
+                                <div class="normalmuychica">VALOR ESTIMADO</div>
+                                <div class="ncolumnelementl normalmuychica">$</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div class="ncolumnelementl">
+                                <div class="normalmuychica">DEUDA HIPOTECARIA MONTO</div>
+                                <div class="ncolumnelementl normalmuychica">$</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="clearl anchocompleto1 ncolumnelementl">
+                            <div id="acreedor" class="ncolumnelementl">
+                                <div class="normalmuychica">ACREEDOR</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div id="datoscomplementarios_domicilio" class="ncolumnelementl">
+                                <div class="normalmuychica">DOMICILIO</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rayabottom ncolumncontainer">
+                <div class="ncolumnelementl">
+                    <div class="clearr normalmuychica ncolumnelementl">PROPIETARIO</div>
+                    <div class="clearl ncolumnelementl">
+                        <div class="simulacheckbox floatleft"></div>
+                        <div class="floatleft alturafija"><div class="datovalor paddingleft">S&Iacute;</div></div>
+                    </div>
+                </div>
+                <div class="anchocompleto2 marco ncolumnelementr">
+                    <div class="ncolumcontainer">
+                        <div class="clearr anchocompleto1 ncolumnelementl">
+                            <div id="ubicacioninmueble" class="ncolumnelementl">
+                                <div class="normalmuychica">UBICACI&Oacute;N INMUEBLE</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div class="ncolumnelementl">
+                                <div class="normalmuychica">VALOR ESTIMADO</div>
+                                <div class="ncolumnelementl normalmuychica">$</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div class="ncolumnelementl">
+                                <div class="normalmuychica">DEUDA HIPOTECARIA MONTO</div>
+                                <div class="ncolumnelementl normalmuychica">$</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="clearl anchocompleto1 ncolumnelementl">
+                            <div id="acreedor" class="ncolumnelementl">
+                                <div class="normalmuychica">ACREEDOR</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div id="datoscomplementarios_domicilio" class="ncolumnelementl">
+                                <div class="normalmuychica">DOMICILIO</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ncolumncontainer">
+                <div class="ncolumnelementl">
+                    <div class="clearr normalmuychica ncolumnelementl">ALQUILA</div>
+                    <div class="clearl ncolumnelementl">
+                        <div class="simulacheckbox floatleft"></div>
+                        <div class="floatleft alturafija"><div class="datovalor paddingleft">S&Iacute;</div></div>
+                    </div>
+                </div>
+                <div class="anchocompleto2  marco ncolumnelementr">
+                    <div class="ncolumcontainer">
+                        <div class="ncolumnelementl">
+                            <div id="alquila_apellidonombre" class="clearr ncolumnelementl">
+                                <div class="normalmuychica">&iquest;A QUI&Eacute;N? APELLIDO Y NOMBRE</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                            <div id="alquila_domiciliolocador" class="clearl ncolumnelementl">
+                                <div class="normalmuychica">DOMICILIO DEL LOCADOR</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="clearr ncolumnelementl">
+                                <div class="normalmuychica">FORMA DE PAGO</div>
+                                <div class="ncolumnelementl">
+                                    <div class="simulacheckbox floatleft"></div>
+                                    <div class="floatleft alturafija"><div class="datovalor paddingleft">Mensual</div></div>
+                                </div>
+                                <div class="ncolumnelementl">
+                                    <div class="simulacheckbox floatleft"></div>
+                                    <div class="floatleft alturafija"><div class="datovalor paddingleft">+ de 2 meses</div></div>
+                                </div>
+                            </div>
+                            <div id="alquila_montoalquiler" class="clearl ncolumnelementl">
+                                <div class="normalmuychica">MONTO DEL ALQUILER</div>
+                                <div class="ncolumnelementl normalmuychica">$</div>
+                                <div class="rayabottom datovalor">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="datoscomplementarios_cuerpodatos">
+            <div class="ncolumncontainer">
+                <div class="nomargin rayaright titulo_ingresos ncolumnelementl">
+                    <img class="ingresos_img" src="{{APPLICATIONROOT}}images/titulo_ingresos.gif" width="10px" height="140px" />
+                </div>
+                <div class="ncolumnelementr">
+                   <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div id="ingresos_actividad" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica" style="text-align:left; height:10px;">ACTIVIDAD</div>
+                            <div class="rayabottom datovalor" style="width:200px;text-align:left;">{{OCUPACION}}</div>
+                        </div>
+                        <div id="ingresos_descripcion" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica" style="text-align:left;height:10px;">DESCRIPCI&Oacute;N</div>
+                            <div class="rayabottom datovalor" style="text-align:left;">&nbsp;</div>
+                        </div>
+                        <div id="ingresos_cargo" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica" style="text-align:left;height:10px;">CARGO</div>
+                            <div class="rayabottom datovalor" style="text-align:left;">&nbsp;</div>
+                        </div>
+                        <div id="ingresos_fechacomienzo" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica" style="text-align:left;height:10px;font-size:5pt;">FECHA DE INGRESO O <br /> COMIENZO DE LA ACTIVIDAD</div>
+                            <div class="rayabottom datovalor" style="text-align:left;">&nbsp;</div>
+                        </div>
+                        <div id="ingresos_telefonocomercial" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica" style="text-align:left;height:10px;">TEL&Eacute;FONO COMERCIAL</div>
+                            <div class="rayabottom datovalor" style="text-align:left;">&nbsp;</div>
+                        </div>
+                   </div>
+                   <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div id="ingresos_empleadornombrerazon" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica">EMPLEADOR O NOMBRE DE RAZON SOCIAL</div>
+                            <div class="rayabottom datovalor">{{NOMBRERAZONSOCIALEMPLEADOR}}</div>
+                        </div>
+                        <div id="ingresos_domicilio" class="nomargin ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">{{DOMICILIOEMPLEADOR}}</div>
+                        </div>
+                   </div>
+                   <div class="anchocompleto3 clearb ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">INGRESOS MENSUALES</div>
+                            <div class="ncolumnelementl normalmuychica">$</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">SUELDOS</div>
+                            <div class="ncolumnelementl normalmuychica">$</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">OTROS INGRESOS(ESPECIFICAR)</div>
+                            <div class="ncolumnelementl normalmuychica">$</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">TOTAL DE INGRESOS MENSUALES</div>
+                            <div class="ncolumnelementl normalmuychica">$</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="marco ncolumnelementl">
+                            <div class="normalminima">PATRIMONIO NETO S/DETALLE POR SEPARADO</div>
+                            <div class="ncolumnelementl normalmuychica">$</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                   </div>
+                   <div class="anchocompleto3 clearb ncolumnelementl">
+                        <div class="ncolumnelementl">
+                            <div class="normalmuychica">CLASE DE SOCIEDAD</div>
+                            <div class="nomargin clasesociedad1 ncolumnelementl">
+                                <ul class="nomargin listarchecker">
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.C.</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.R.L.</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nomargin clasesociedad1 ncolumnelementl">
+                                <ul class="nomargin listarchecker">
+                                    <li><div class="nomargin lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.C.A</div></div>
+                                        </div>
+                                    </li>
+                                    <li><div class="nomargin  lielement">
+                                            <div class="nomargin simulacheckbox floatleft"></div>
+                                            <div class="nomargin floatleft alturafija"><div class="datovalor paddingleft">S.A.</div></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ncolumnelementl">
+                            <div class="nomargin anchocompleto4 clearb ncolumnelementl">
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">INSCRIPCI&Oacute;N EN EL REGISTRO PUBLICO DE COMERCIO DE</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">FECHA</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="nomargin anchocompleto4 clearb ncolumnelementl">
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">BAJO EL N&ordm;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">ALF&ordm;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">DEL LIBRO</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div class="normalmuychica">TOMO</div>
+                                </div>
+                                <div class="nomargin ncolumnelementl">
+                                    <div id="raya_CIN" class="rayabottom datovalor">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="datoscomplementarios_cuerpodatos">
+            <div class="ncolumncontainer">
+                <div class="titulo_referenciascomerciales nomargin rayaright ncolumnelementl">
+                    <img class="referenciascomerciales_img" src="{{APPLICATIONROOT}}images/titulo_referenciascomerciales.gif" width="15px" height="140px" />
+                </div>
+                <div class="ncolumnelementr">
+                    <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_nombrebancoopera ncolumnelementl">
+                            <div class="normalmuychica">NOMBRE DEL BANCO CON QUE OPERA</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_bancooperadomicilio ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_autofinanciadoanteriormenteciudad ncolumnelementl">
+                            <div class="normalmuychica">NUMERO DE CUENTA</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_nombrebancoopera ncolumnelementl">
+                            <div class="normalmuychica">NOMBRE DEL BANCO CON QUE OPERA</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_bancooperadomicilio ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_autofinanciadoanteriormenteciudad ncolumnelementl">
+                            <div class="normalmuychica">NUMERO DE CUENTA</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_autofinanciadoanteriormentepor ncolumnelementl">
+                            <div class="normalmuychica">AUTOMOVIL FINANCIADO ANTERIORMENTE POR</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_autofinanciadoanteriormentedomicilio ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_autofinanciadoanteriormenteciudad ncolumnelementl">
+                            <div class="normalmuychica">CIUDAD</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="nomargin anchocompleto3 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_nombrebanco ncolumnelementl">
+                            <div class="normalmuychica">NOMBRE DEL BANCO/FINANCIERA/COMERCIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_domiciliobanco ncolumnelementl">
+                            <div class="normalmuychica">DOMICILIO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_ciudadobanco ncolumnelementl">
+                            <div class="normalmuychica">CIUDAD</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                        <div class="nomargin referenciascomerciales_montobanco ncolumnelementl">
+                            <div class="normalmuychica">MONTO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="nomargin anchocompleto2 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_otros ncolumnelementl">
+                            <div class="normalmuychica">OTRO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="nomargin anchocompleto2 clearb ncolumnelementl">
+                        <div class="nomargin referenciascomerciales_otros ncolumnelementl">
+                            <div class="normalmuychica">OTRO</div>
+                            <div class="rayabottom datovalor">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer" style="margin:0px;">
+            <div class="datoscomplementarios_cuerpodatos">
+                <span class="normalmuychica">
+                    "El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+                    gratuita a intervalos no inferiores a seis meses, salvo que se acredite un inter&eacute;s leg&iacute;timo al efecto conforme los
+                    establecido en el art&iacute;culo 14, inciso 3 de la ley N&ordm; 25.326. LA DIRECCI&Oacute;N NACIONAL DE PROTECCI&Oacute;N DE DATOS
+                    PERSONALES, &Oacute;rgano de Control de la Ley N&ordm; 25.326, tiene la atribuci&oacute;n de atender las denuncias y reclamos
+                    que se interpongan con relaci&oacute;n al incumplimiento de las normas sobre protecci&oacute;n de datos personales"
+                </span>
+            </div>
+            <div id="declara" style="width:250px;">
+                <div class="normalchica">
+                    PO-7413
+                </div>
+            </div>
+            <div class="ncolumncontainer" style="width:380px;">
+                <div class="texto" style="width:380px;">
+                    <div class="margintopchico ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Firma:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:277px;">&nbsp;</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Aclaraci&oacute;n:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:258px;text-align:left;">&nbsp;{{APELLIDONOMBRE}}</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl alturafija">Tipo y Nro. de documento:</div>
+                        <div class="rayabottom datovalor floatleft" style="width:191px;text-align:left;">&nbsp;{{TIPOYNRODOCUMENTO}}</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+  </body>
+</html>
+<script language="Javascript">
+    function dom_objDatosCom(strID){
+        return document.getElementById(strID);
+    }
+//     if(dom_objDatosCom('SEXO_{{SEXO}}')){dom_objDatosCom('SEXO_{{SEXO}}').checked="checked";}
+//     if(dom_objDatosCom('ESTADOCIVIL_{{ESTADOCIVIL}}')){dom_objDatosCom('ESTADOCIVIL_{{ESTADOCIVIL}}').checked="checked";}
+//     if(dom_objDatosCom('TIPODOCUMENTO_{{TIPODOCUMENTO}}')){dom_objDatosCom('TIPODOCUMENTO_{{TIPODOCUMENTO}}').checked="checked";}
+//     if(dom_objDatosCom('NACIONALIDAD_{{NACIONALIDAD}}')){dom_objDatosCom('NACIONALIDAD_{{NACIONALIDAD}}').checked="checked";}
+//     if(dom_objDatosCom('CONDICIONIVA_{{CONDICIONIVA}}')){dom_objDatosCom('CONDICIONIVA_{{CONDICIONIVA}}').checked="checked";}
+
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_{{SEXO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_SEXO_{{SEXO}}').appendChild(document.createTextNode("X"));}
+//     if(dom_objDatosCom('DC_TIPODOCUMENTO_{{TIPODOCUMENTO}}')){dom_objDatosCom('DC_TIPODOCUMENTO_{{TIPODOCUMENTO}}').appendChild(document.createTextNode("X"));}
+    //if(dom_objDatosCom('{{IMPRESIONCODE}}DC_NACIONALIDAD_{{NACIONALIDAD}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_NACIONALIDAD_{{NACIONALIDAD}}').appendChild(document.createTextNode("X"));}
+    //if(dom_objDatosCom('{{IMPRESIONCODE}}DC_CONDICIONIVA_{{CONDICIONIVA}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_CONDICIONIVA_{{CONDICIONIVA}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_{{ESTADOCIVIL}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_ESTADOCIVIL_{{ESTADOCIVIL}}').appendChild(document.createTextNode("X"));}
+    if(dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}')){dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}').className = dom_objDatosCom('{{IMPRESIONCODE}}DC_TIPODOC_{{TIPODOCUMENTO}}').className.replace("tachado","");}
+     
+</script>

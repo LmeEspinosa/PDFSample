@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <title>{{TITLE}}</title>
+</head>
+<body>
+    <div id="container">
+        <div class="ncolumnelementl" style="top:10px;"><span class="normalmuychica" style="color:#DBDCE2;">SECRETO</span></div>
+        <div id="masterheader">
+            <div id="logoplanovalo">
+                <img src="{{APPLICATIONROOT}}images/LogoPlanOvalo.png" style="width:120px;" />
+            </div>
+            <div id="headerdireccion">
+                <span class="boldmediana">
+                    Plan Ovalo S.A<br />
+                    de Ahorro para Fines Determinados<br />
+                </span>
+                <span class="normalchica">
+                    Av.Henry Ford 3295 (B1610BKK) R.Rojas<br />
+                    (Ex Gral. Pacheco) Pcia. de Bs.As.
+                </span>
+            </div>
+            <div id="headernrosolicitud">
+                <div class="marco">
+                    SOLICITUD DE ADHESI&Oacute;N N&ordm;
+                </div>
+                <div class="marco NroSolicitudGrande">
+                    {{NSOLICITUD}}
+                </div>
+            </div>
+        </div>
+        <div id="titulos" class="margintopchico">
+            <div id="nroSolicitud" class="subrayado anexosbonificacion_titulo_anexo">
+                <span>SOLICITUD DE ADHESI&Oacute;N AL SERVICIO DE PAGO CON TARJETA DE CR&Eacute;DITO</span>
+            </div>
+        </div>
+        <div id="cuerpodatos" class="margintopmediano">
+            <div class="pagotarjeta_textoprincipalcentrado">
+                <div class="ncolumncontainer">
+                    <!--<div class="ncolumncontainer">
+                        <div class="textogrande ncolumnelementl">REF: Grupo</div>
+                        <div id="pagotarjeta_raya_grupo" class="rayabottom datovalor ncolumnelementl alturafija">{{GRUPO}}</div>
+                        <div class="textogrande ncolumnelementl">Orden:</div>
+                        <div id="pagotarjeta_raya_orden" class="rayabottom datovalor ncolumnelementl alturafija">{{ORDEN}}</div>
+                    </div>-->
+                    <div class="margintopgrande ncolumncontainer">
+                        <div class="ncolumncontainer">
+                            <div id="pagotarjeta_raya_lugarfecha1" class="rayabottom datovalor ncolumnelementl" style="margin-right:0px;font-size:10pt;">{{LUGAR}}</div>
+                            <div class="rayabottom datovalor ncolumnelementl" style="margin-left:0px;font-size:10pt;">{{NRODIA}}&nbsp;</div>
+                            <div class="textogrande ncolumnelementl">de</div>
+                            <div id="pagotarjeta_raya_lugarfecha2" class="rayabottom datovalor ncolumnelementl" style="font-size:10pt;">{{MESDESC}}</div>
+                            <div class="textogrande ncolumnelementl">de</div>
+                            <div id="pagotarjeta_raya_lugarfecha3" class="rayabottom datovalor ncolumnelementl" style="font-size:10pt;">{{ANIO}}</div>
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="textogrande ncolumnelementl">(Lugar)(Fecha)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncolumncontainer">
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        <div class="ncolumncontainer">Se&ntilde;ores</div>
+                        <div class="ncolumncontainer">PLAN OVALO S.A.</div>
+                    </div>
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        De mi consideraci&oacute;n:
+                    </div>
+                    <div class="margintopchico textogrande ncolumncontainer">
+                        <div class="ncolumncontainer">
+                            <div class="nomargin textogrande ncolumnelementl">El que suscribe&nbsp;</div>
+                            <div id="pagotarjeta_raya_elquesuscribe" class="nomargin rayabottom datovalor ncolumnelementl">{{ELQUESUSCRIBE}}</div>
+                            <div class="nomargin textogrande clearr ncolumnelementl">&nbsp;en</div>
+                        </div>
+
+                        <div class="ncolumncontainer">
+                            <div class="nomargin textogrande clearl ncolumnelementl">mi car&aacute;cter de titular de tarjeta de cr&eacute;dito&nbsp;</div>
+
+                            <!--<div id="{{IMPRESIONCODE}}TIPOTARJETA1_N" class="nomargin tachado datovalor ncolumnelementl">TARJETA NARANJA</div>
+                            <div class="nomargin datovalor ncolumnelementl">/</div>
+                            <div id="{{IMPRESIONCODE}}TIPOTARJETA1_V" class="nomargin tachado datovalor ncolumnelementl">VISA</div>-->
+                            <div style="clear:both;padding:10px;min-height:140px;" class="container_tipostarjeta">
+                                {{TIPOS_TARJETAS}}
+                            </div>
+
+                            <!--<div class="nomargin textogrande ncolumnelementl">&nbsp;(tachar lo que no corresponda)</div>-->
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="nomargin ncolumnelementl">Tarjeta Nro.&nbsp;</div>
+                            <div id="pagotarjeta_raya_nrotarjeta" class="nomargin rayabottom datovalor ncolumnelementl">
+                                <table style="margin: auto">
+                                    <tbody>
+                                        <tr>
+                                            <td>{{NROTARJETA1}}</td>
+                                            <td>{{NROTARJETA2}}</td>
+                                            <td>{{NROTARJETA3}}</td>
+                                            <td>{{NROTARJETA4}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                            
+                            <div class="nomargin clearr ncolumnelementl">
+                                &nbsp;autorizo por la presente a que el pago
+                                correspondiente a
+                            </div>
+                        </div>
+
+                        <div class="ncolumncontainer">
+                            las cuotas mensuales del plan de ahorro por mi suscripto, ser&aacute;n debitadas en forma
+                            directa y
+                        </div>
+                        <div class="ncolumncontainer">autom&aacute;tica en el resumen de cuenta de la tarjeta citada precedentemente y/o de sus</div>
+                        <div class="ncolumncontainer">correspondientes reemplazos.</div>
+                    </div>
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        <div class="ncolumncontainer">De la misma manera me comprometo a informar cualquier cambio en el N&ordm; de tarjeta antes</div>
+                        <div class="ncolumncontainer">mencionado.</div>
+                    </div>
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        <div class="ncolumncontainer">La autorizaci&oacute;n tiene validez desde la recepci&oacute;n de la presente por Plan Ovalo S.A. hasta tanto</div>
+                        <div class="ncolumncontainer">medie comunicaci&oacute;n fehaciente de mi parte para revocarla.</div>
+                    </div>
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        <div class="ncolumncontainer">
+                            Asimismo, faculto a Plan Ovalo S.A. a presentar esta autorizaci&oacute;n en la tarjeta seleccionada a efectos de
+                            cumplimentar la misma.
+                        </div>
+                        <!--<div id="{{IMPRESIONCODE}}TIPOTARJETA2_N" class="tachado datovalor ncolumnelementl">TARJETA NARANJA</div>
+                        <div class="datovalor ncolumnelementl">/</div>
+                        <div id="{{IMPRESIONCODE}}TIPOTARJETA2_V" class="tachado datovalor ncolumnelementl">VISA</div>
+                        <div class="ncolumncontainer">(tachar lo que no corresponda) a efectos de cumplimentar la misma.</div>-->
+                    </div>
+                    <div class="margintopmediano textogrande ncolumncontainer">
+                        <div class="clearl ncolumnelementl">Saludos a Uds. atentamente.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="footer" class="margintopmediano">
+            <div class="pagotarjeta_textoprincipalcentrado">
+                <div class="margintopgrande textogrande ncolumncontainer">
+                    <div class="ncolumncontainer">
+                        <div id="pagotarjeta_raya_firma" class="rayatop ncolumnelementl">Firma</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl">Aclaraci&oacute;n de firma:</div>
+                        <div id="pagotarjeta_raya_aclaracionfirma" class="rayabottom datovalor ncolumnelementl" style="text-align:left;">&nbsp;{ {ELQUESUSCRIBE}}</div>
+                    </div>
+                    <div class="ncolumncontainer">
+                        <div class="ncolumnelementl">Tipo y N&ordm; de documento:</div>
+                        <div id="pagotarjeta_raya_tipoynrodocumento" class="rayabottom datovalor ncolumnelementl" style="text-align:left;">&nbsp;{ {TIPOYNRODOCUMENTO}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div id="footer" class="margintopmediano ncolumncontainer">
+            <div class="halftotalwidth ncolumnelementl" style="margin-left: 60px;">
+                <div class="subrayado boldmediana">
+                    <!--<span>FIRMA DEL TITULAR DE LA TARJETA</span>-->
+                </div>
+                <div class="margintopmediano ncolumncontainer" style="width:310px;">
+                    <div class="texto" style="width:300px;">
+                        <div class="margintopchico ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;">&nbsp;</div>
+                            <div class="ncolumnelementl alturafija">Firma del titular de la tarjeta</div>
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;text-align:left;">&nbsp;{{ELQUESUSCRIBE}}</div>
+                            <div class="ncolumnelementl alturafija">Aclaraci&oacute;n de firma</div>
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;text-align:left;">&nbsp;{{TIPOYNRODOCUMENTO}}</div>
+                            <div class="ncolumnelementl alturafija">Documento (Tipo y N&uacute;mero)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="halftotalwidth ncolumnelementl" style="width: 280px;">
+                <div class="subrayado boldmediana">
+                    <!--<span>FIRMA DEL TITULAR DE LA TARJETA</span>-->
+                </div>
+                <div class="margintopmediano ncolumncontainer" style="width:310px;">
+                    <div class="texto" style="width:300px;">
+                        <div class="margintopchico ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;">&nbsp;</div>
+                            <div class="ncolumnelementl alturafija">Firma del titular del plan</div>
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;text-align:left;">&nbsp;{{ELQUESUSCRIBE}}</div>
+                            <div class="ncolumnelementl alturafija">Aclaraci&oacute;n de firma</div>
+                        </div>
+                        <div class="ncolumncontainer">
+                            <div class="rayabottom datovalor floatleft" style="width:247px;text-align:left;">&nbsp;{{TIPOYNRODOCUMENTO}}</div>
+                            <div class="ncolumnelementl alturafija">Documento (Tipo y N&uacute;mero)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script language="Javascript">
+    function dom_objPagoTarjeta(strID) {
+        return document.getElementById(strID);
+    }
+    if (dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA1_{{TIPOTARJETA}}')) { dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA1_{{TIPOTARJETA}}').className = dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA1_{{TIPOTARJETA}}').className.replace("tachado ", ""); }
+    if (dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA2_{{TIPOTARJETA}}')) { dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA2_{{TIPOTARJETA}}').className = dom_objPagoTarjeta('{{IMPRESIONCODE}}TIPOTARJETA2_{{TIPOTARJETA}}').className.replace("tachado ", ""); }
+    //window.print();
+</script>
