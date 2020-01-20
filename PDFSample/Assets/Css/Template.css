@@ -1,0 +1,1235 @@
+﻿.IE6corregirPNG {
+    behavior: url("iepngfix.htc");
+}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#container {
+    width: 645px;
+    margin: 1px 2px 0px 2px;
+    text-align: justify;
+}
+
+#masterheader {
+    float: left;
+    width: 99%;
+    margin: 1px;
+}
+
+#nroSolicitud {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+#cuerpodatos {
+    float: left;
+    width: 100%;
+}
+
+.texto {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+}
+
+.textogrande {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: /*12px*/ 9pt;
+}
+
+.boldmediana {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: /*9pt*/ 7pt;
+    font-weight: bold;
+}
+
+.boldgrande {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.normalchica {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+}
+
+.normalmuychica {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 6pt;
+}
+
+.normalminima {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 5pt;
+}
+
+.boldclass {
+    font-weight: bold;
+}
+
+.twocolumnelement {
+    width: 50%;
+    float: left;
+}
+
+.halftotalwidth {
+    width: 45%;
+}
+
+.ncolumncontainer {
+    width: 100%;
+    float: left;
+}
+
+.ncolumnelementl {
+    float: left;
+    text-align: center;
+    margin: 2px;
+}
+
+.ncolumnelementr {
+    float: right;
+    text-align: center;
+    margin: 2px;
+}
+
+#headerdireccion {
+    border: 1px solid;
+    float: left;
+    padding: 3px;
+    top: 10px;
+    position: relative;
+}
+
+#logoplanovalo {
+    float: left;
+    margin: 0px 10px 1px 5px;
+}
+
+#headerResolucion {
+    color: #0A326A;
+    float: right;
+    top: 10px;
+    position: relative;
+    width: 260px;
+    font-size: 5pt;
+    font-family: Arial;
+    padding: 2px;
+    margin-right: 4px;
+    text-align: justify;
+}
+
+#titulos {
+    float: left;
+    width: 100%;
+}
+
+#Cualquierduda {
+    float: left;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    width: 102%;
+    text-align: center;
+    margin-bottom: 3px;
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 6pt;
+}
+
+.marco {
+    border: 1px solid;
+    padding: 1px;
+}
+
+#footer {
+    float: left;
+    width: 100%;
+    margin: 3px 1px 5px 1px;
+}
+
+#legalleft {
+    float: left;
+    width: 317px;
+    /*margin:2px 0px 2px 2px;*/
+    margin: 2px;
+}
+
+#legalright {
+    float: right;
+    width: 300px;
+    /*margin:2px 2px 2px 0px;*/
+    margin: 2px 4px 2px 2px;
+}
+
+#titAdherente {
+    float: left;
+    width: 98%;
+    margin: 0px 1px 4px 1px;
+    text-align: justify;
+}
+
+#hojacat {
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 340px;
+}
+
+.cuadroleft {
+    float: left;
+    width: 18px;
+    height: 20px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.cuadroright {
+    float: left;
+    width: 18px;
+    height: 20px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+.cuadros {
+    position: relative;
+    top: 256px;
+    left: 238px;
+}
+
+#datospersonales {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+    #datospersonales div {
+        text-align: left;
+    }
+
+
+.datovalor {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 8pt;
+    color: #000000;
+}
+
+#titdatospersonales {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#declara {
+    float: left;
+    width: 99%;
+    margin: 1px 2px 2px 2px;
+}
+
+#verarticulo {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+#firma {
+    float: right;
+    margin-top: 32px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    width: 300px;
+}
+
+    #firma #firmaraya {
+        border-bottom: 1px solid #0A326A;
+    }
+
+    #firma #firmarayaprenda {
+        border-bottom: 1px solid #000000;
+    }
+
+    #firma #firmatexto {
+        text-align: center;
+    }
+
+#nombreconcesionaria {
+    width: 515px;
+}
+
+#numeroconcesionaria {
+    width: 120px;
+}
+
+#email {
+    width: 640px
+}
+
+#telefonocelcbu {
+    width: 432px;
+}
+
+#condiciondeiva {
+    width: 110px;
+}
+
+#tipocontacto {
+    width: 100px;
+}
+
+#nrocuil {
+    width: 203px;
+}
+
+#telefonoparticular {
+    width: 432px;
+}
+
+#localidad {
+    width: 420px;
+    text-align: left;
+}
+
+#provincia {
+    width: 420px;
+    text-align: left;
+}
+
+#codigopostal {
+    width: 150px;
+}
+
+#fechanacimiento {
+    width: 150px;
+}
+
+#primeracuotareajustable {
+    width: 165px;
+}
+
+#derechodeadmision {
+    width: 102px;
+}
+
+#cargoporadministracion {
+    width: 128px;
+}
+
+#segurodevida {
+    width: 100px;
+}
+
+#otros {
+    width: 125px;
+}
+
+#marca {
+    width: 50px;
+}
+
+#modelo {
+    width: 245px;
+}
+
+#fabricadopor {
+    width: 150px;
+}
+
+#valor {
+    width: 120px;
+}
+
+#porcentajealicuota {
+    width: 55px;
+}
+
+#total {
+    width: 125px;
+}
+
+#sellado {
+    width: 125px;
+}
+
+.alturafija {
+    height: 13px;
+}
+
+.listarchecker li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.listarchecker {
+    margin: 0px;
+    padding: 0px;
+}
+
+.simulacheckbox {
+    width: 12px;
+    height: 12px;
+    border: 1px solid;
+    font-size: 7pt;
+    font-family: Verdana;
+    text-align: center !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lielement {
+    height: 15px;
+    clear: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.floatleft {
+    float: left;
+}
+
+.paddingleft {
+    padding-left: 2px;
+}
+
+#nrodocumento {
+    width: 220px;
+}
+
+#ApeNomRazon {
+    width: 640px;
+    text-align: left;
+}
+
+#domicilio {
+    width: 640px;
+    text-align: left;
+}
+
+#lineapunteada {
+    border-bottom: 1px dotted;
+    border-bottom-color: #0A326A;
+    width: 492px;
+    height: 12px;
+    margin-left: 2px
+}
+
+/***************************************************************************************************************************************************/
+/*                                                   CSS PARA FORMULARIO DE DATOS COMPLEMENTARIOS                                                   */
+/***************************************************************************************************************************************************/
+
+.clearr {
+    clear: right;
+}
+
+.clearl {
+    clear: left;
+}
+
+.clearb {
+    clear: both;
+}
+
+.rayabottom {
+    border-bottom: 1px solid #0A326A;
+}
+
+.rayaleft {
+    border-left: 1px solid #0A326A;
+}
+
+.rayaright {
+    border-right: 1px solid #0A326A;
+}
+
+.rayatop {
+    border-top: 1px solid #0A326A;
+}
+
+.rayabottomprenda {
+    border-bottom: 1px solid #000000;
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+#headernrosolicitud {
+    color: #0A326A;
+    float: right;
+    top: 10px;
+    position: relative;
+    width: 226px;
+    font-size: 11pt;
+    font-family: Arial;
+    padding: 2px;
+    margin-right: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#datoscomplementarios_tituloprincipal {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    /*margin-top:2px;
+margin-bottom:2px;*/
+    width: 642px;
+    text-align: center;
+}
+
+.datoscomplementarios_cuerpodatos {
+    float: left;
+    width: 99%;
+    border: 1px solid;
+    margin: 1px;
+}
+
+.alturacompleta1 {
+    height: /*82*/ 70px;
+}
+
+.anchocompleto1 {
+    width: 540px;
+}
+
+.anchocompleto2 {
+    width: 555px;
+}
+
+.anchocompleto3 {
+    width: 600px;
+}
+
+.anchocompleto4 {
+    width: 415px;
+}
+
+.alturacompleta2 {
+    height: 32px;
+}
+
+#datoscomplementarios_cuerpodatos2 {
+    width: 419px;
+    border-right: 1px solid;
+    margin: 0px;
+}
+
+#datoscomplementarios_cuerpodatos1 {
+    border-top: 1px solid;
+    width: 100%;
+    margin: 0px;
+}
+
+#provincia {
+    width: 175px;
+}
+
+#codpostal {
+    width: 175px;
+}
+
+#raya_CIN {
+    width: 53px;
+}
+
+#raya_EXPPOR {
+    width: 53px;
+}
+
+#datoscomplementarios_sexo {
+    width: 90px;
+}
+
+#datoscomplementarios_estadocivil {
+    width: 95px;
+}
+
+#nrodepersonasasucargo_titulo {
+    width: 65px;
+}
+
+#tiempoderesidenciadomicilio_titulo {
+    width: 100px;
+}
+
+#tiempoderesidencialocalidad_titulo {
+    width: 100px;
+}
+
+#parientemascercano_apellidoynombre {
+    width: 260px;
+}
+
+#parientemascercano_parentesco {
+    width: 75px;
+}
+
+#parientemascercano_domicilio {
+    width: 200px;
+}
+
+#parientemascercano_telefono {
+    width: 75px;
+}
+
+div.bigsquare {
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+}
+
+#ubicacioninmueble {
+    width: 280px;
+}
+
+#acreedor {
+    width: 230px;
+}
+
+#datoscomplementarios_domicilio {
+    width: 230px;
+}
+
+#alquila_apellidonombre {
+    width: 300px;
+}
+
+#alquila_domiciliolocador {
+    width: 300px;
+}
+
+#alquila_montoalquiler {
+    width: 200px;
+}
+
+.clasesociedad1 {
+    width: 60px;
+}
+
+.titulo_ingresos {
+    height: 140px;
+}
+
+.titulo_referenciascomerciales {
+    height: /*162px*/ 150px;
+}
+
+.ingresos_img {
+    margin: 0px 5px 0px 5px;
+}
+
+.referenciascomerciales_img {
+    margin: 5px 5px 5px 5px;
+}
+
+.referenciascomerciales_otros {
+    width: 550px;
+}
+
+.referenciascomerciales_nombrebanco {
+    width: 188px;
+}
+
+.referenciascomerciales_domiciliobanco {
+    width: 200px;
+}
+
+.referenciascomerciales_ciudadobanco {
+    width: 75px;
+}
+
+.referenciascomerciales_montobanco {
+    width: 85px;
+}
+
+.referenciascomerciales_autofinanciadoanteriormentepor {
+    width: 205px;
+}
+
+.referenciascomerciales_autofinanciadoanteriormentedomicilio {
+    width: 200px;
+}
+
+.referenciascomerciales_autofinanciadoanteriormenteciudad {
+    width: 145px;
+}
+
+.referenciascomerciales_nombrebancoopera {
+    width: 200px;
+}
+
+.referenciascomerciales_bancooperadomicilio {
+    width: 200px;
+}
+
+.referenciascomerciales_bancooperanumerodecuenta {
+    width: 200px;
+}
+
+#ingresos_empleadornombrerazon {
+    width: 220px;
+}
+
+#ingresos_domicilio {
+    width: 340px;
+}
+
+#ingresos_actividad {
+    width: 160px;
+}
+
+#ingresos_descripcion {
+    width: 80px;
+}
+
+#ingresos_cargo {
+    width: 70px;
+}
+
+#ingresos_fechacomienzo {
+    width: 180px;
+}
+
+#ingresos_telefonocomercial {
+    width: 100px;
+}
+
+/***************************************************************************************************************************************************/
+
+.margintopchico {
+    margin-top: 3pt;
+}
+
+.margintopmediano {
+    margin-top: 25px;
+}
+
+.margintopgrande {
+    margin-top: 40px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.tipocuentaymoneda {
+    text-align: left;
+    width: 250px;
+}
+
+.tipocuentaymoneda_chk {
+    width: 100px;
+}
+
+.tipocuentaymoneda_chk_container {
+    width: 150px;
+}
+
+.pagodirecto_firma {
+    width: 245px;
+    text-align: left;
+}
+
+.pagodirecto_aclaracion {
+    width: 226px;
+    text-align: left;
+}
+
+.pagodirecto_tipoynrodocumento {
+    width: 150px;
+    text-align: left;
+}
+
+#pagodirecto_datospersonales {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+#pagodirecto_raya_apellidonombre {
+    width: 450px;
+    text-align: left;
+}
+
+#pagodirecto_raya_cuil {
+    width: 540px;
+    text-align: left;
+}
+
+#pagodirecto_raya_callepisodpto {
+    width: 491px;
+    text-align: left;
+}
+
+#pagodirecto_raya_localidad {
+    width: 260px;
+    text-align: left;
+}
+
+#pagodirecto_raya_provincia {
+    width: 248px;
+    text-align: left;
+}
+
+#pagodirecto_raya_codigopostal {
+    width: 240px;
+    text-align: left;
+}
+
+#pagodirecto_raya_telefono {
+    width: 248px;
+    text-align: left;
+}
+
+#pagodirecto_raya_nombretitularcuenta {
+    width: 412px;
+    text-align: left;
+}
+
+#pagodirecto_cbu_completa {
+    width: 100%;
+    margin-top: 4px;
+}
+
+#pagodirecto_marco_cbu {
+    width: 280px;
+    text-align: left;
+}
+
+#pagodirecto_raya_banco {
+    width: 579px;
+    text-align: left;
+}
+
+#pagodirecto_raya_sucursal {
+    width: 569px;
+    text-align: left;
+}
+
+#pagodirecto_raya_domiciliosucursal {
+    width: 522px;
+    text-align: left;
+}
+
+#pagodirecto_raya_localidadsucursal {
+    width: 563px;
+    text-align: left;
+}
+
+.rayacompletar {
+    height: 11px;
+    padding: 2px 0;
+}
+
+.separarFilas {
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+/************************************************************************************************************************************/
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.pagotarjeta_textoprincipalcentrado {
+    width: 550px;
+    margin: 0px 70px;
+}
+
+#pagotarjeta_raya_grupo {
+    width: 150px;
+}
+
+#pagotarjeta_raya_orden {
+    width: 150px;
+}
+
+#pagotarjeta_raya_lugarfecha1 {
+    width: 300px;
+}
+
+#pagotarjeta_raya_lugarfecha2 {
+    width: 100px;
+}
+
+#pagotarjeta_raya_lugarfecha3 {
+    width: 50px;
+}
+
+#pagotarjeta_raya_elquesuscribe {
+    width: 425px;
+}
+
+#pagotarjeta_raya_nrotarjeta {
+    width: 190px;
+}
+
+#pagotarjeta_raya_firma {
+    width: 200px;
+    text-align: left;
+}
+
+#pagotarjeta_raya_aclaracionfirma {
+    width: 430px;
+}
+
+#pagotarjeta_raya_tipoynrodocumento {
+    width: 405px;
+}
+
+/************************************************************************************************************************************/
+
+.punteado {
+    border-bottom-style: dotted;
+}
+
+.entre18y21_textoprincipalcentrado {
+    margin: 0 auto;
+    text-align: justify;
+    width: 530px;
+}
+
+#entre18y21_raya_ocupacion {
+    width: 417px;
+}
+
+#entre18y21_raya_firma {
+    width: 319px;
+}
+
+#entre18y21_raya_aclaracionfirma {
+    width: 246px;
+}
+
+#entre18y21_raya_tipoynrodocumento {
+    width: 206px;
+}
+
+#entre18y21_firma_aclaracion_documento {
+    width: 370px;
+}
+
+/************************************************************************************************************************************/
+
+.anexosbonigicacion_logoplanovalo {
+    float: right;
+    clear: both;
+}
+
+.anexosbonificacion_masterheader {
+    float: left;
+    width: 99%;
+    margin: 1px;
+}
+
+.anexosbonificacion_titulos {
+    float: left;
+    width: 100%;
+}
+
+.anexosbonificacion_titulo_anexo {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+    text-align: left;
+}
+
+.anexosbonificacion_titulo_bases {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+    text-align: left;
+}
+
+
+/******************************************************************************************************************************************/
+
+.anexosbonificacion_headerdireccion {
+    border: 1px solid;
+    float: right;
+    /*padding:2px;*/
+    position: relative;
+    text-align: right;
+}
+
+.anexoplancuotareducida_titulo_anexo {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 8pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    /*margin-top:1px;
+    margin-bottom:1px;*/
+    width: 100%;
+    text-align: center;
+}
+
+.anexoplancuotareducida_subtituloalfabetico {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    width: 100%;
+    text-align: left;
+}
+
+.anexoplancuotareducida_texto {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+}
+
+.anexoplancuotareducida_boldmediana {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+    font-weight: bold;
+}
+
+.anexoplancuotareducida_datovalor {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 8pt;
+    color: #000000;
+}
+
+.anexoplancuotareducida_li {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 7pt;
+    margin: 0;
+}
+
+.anexoplancuotareducida_ol {
+    margin-top: 0;
+}
+
+#anexoplancuotareducida_datospersonalesadherente {
+    width: 566px;
+}
+
+#anexoplancuotareducida_raya_apellidonombrerazonsocial {
+    width: 273px;
+    text-align: left;
+    height: 12px;
+}
+
+#anexoplancuotareducida_raya_documentoidentidadcuit {
+    width: 207px;
+    text-align: left;
+    height: 12px;
+}
+
+#anexoplancuotareducida_raya_firmaadherente {
+    width: 290px;
+    height: 12px;
+}
+
+#anexoplancuotareducida_raya_concesionario {
+    width: 280px;
+    text-align: left;
+}
+
+#anexoplancuotareducida_raya_concesionariodocumento {
+    width: 109px;
+    height: 13px;
+}
+
+#anexoplancuotareducida_raya_concesionariofirma {
+    width: 130px;
+}
+
+#anexoplancuotareducida_raya_concesionaclaracion {
+    width: 103px;
+}
+
+#tableCuotaReducidaPorc td {
+    width: 30;
+    text-align: right;
+}
+
+.olpaddmar {
+    padding-left: 15px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+}
+
+.cuotareducidaarticulo {
+    font-size: 6pt;
+    vertical-align: baseline;
+}
+
+#cuotareducidaresoluciones {
+    width: 100%;
+    font-size: 6pt;
+    text-align: center;
+}
+
+.alturafija2 {
+    height: 12px;
+}
+
+/******* Nro CBU ********/
+.nroCBU {
+    letter-spacing: 2px;
+    font-size: 10pt;
+}
+/***********************/
+
+/** Nro Solicitud Grande **/
+.NroSolicitudGrande {
+    font-size: 15pt;
+}
+/**************************/
+
+li {
+    vertical-align: top;
+    display: list-item;
+}
+
+.containerclass {
+    width: 645px;
+    margin: 1px 2px 0px 2px;
+    text-align: justify;
+}
+
+
+.masterheaderclass {
+    float: left;
+    width: 99%;
+    margin: 1px;
+}
+
+.logoplanovaloclass {
+    float: left;
+    margin: 0px 10px 1px 5px;
+}
+
+.headerdireccionclass {
+    border: 1px solid;
+    float: left;
+    padding: 2px;
+    top: 10px;
+    position: relative;
+}
+
+.headerResolucionclass {
+    color: #0A326A;
+    float: right;
+    font-family: Arial;
+    font-size: 5pt;
+    margin-right: 4px;
+    padding: 2px;
+    position: relative;
+    text-align: justify;
+    top: 8px;
+    width: 280px;
+}
+
+.titulosclass {
+    float: left;
+    width: 100%;
+}
+
+.cuerpodatosclass {
+    float: left;
+    width: 100%;
+}
+
+.footerclass {
+    float: left;
+    width: 100%;
+    margin: 3px 1px 5px 1px;
+}
+
+.nroSolicitudclass {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: /*15px*/ 9pt;
+    font-weight: bold;
+    float: left;
+    clear: right;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.hojacatclass {
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 340px;
+}
+
+.paddingtop {
+    padding-top: 2px;
+}
+
+.texto8pt {
+    color: #0A326A;
+    font-family: Arial;
+    font-size: 8pt;
+}
+
+.texto10pt {
+    font-size: 10pt !important;
+}
+
+.subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.dotted {
+    border-bottom: 1px dotted #0A326A;
+    width: 100%;
+    display: inherit;
+}
+}

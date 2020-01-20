@@ -84,6 +84,9 @@
     <Reference Include="itext.svg, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.svg.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\WEB_PUBLISH\vopa\bin\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Syncfusion.Compression.Portable, Version=17.4200.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.HtmlToPdfConverter.QtWebKit.Net.Core.17.4.0.39\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
@@ -175,6 +178,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\LogoPlanOvalo.png" />
     <Content Include="Assets\Template\01.htm" />
     <Content Include="Assets\Template\02.htm" />
     <Content Include="Assets\Template\02_2.htm" />
@@ -185,6 +189,7 @@
     <Content Include="Assets\Template\07.htm" />
     <Content Include="Assets\Template\08.htm" />
     <Content Include="Assets\Template\09.htm" />
+    <Content Include="Assets\Css\Template.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -193,8 +198,47 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="QtBinariesWindows\icudt49.dll" />
+    <Content Include="QtBinariesWindows\icuin49.dll" />
+    <Content Include="QtBinariesWindows\icuuc49.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qdds.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qgif.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qicns.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qico.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qjp2.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qjpeg.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qmng.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qsvg.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qtga.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qtiff.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qwbmp.dll" />
+    <Content Include="QtBinariesWindows\imageformats\qwebp.dll" />
+    <Content Include="QtBinariesWindows\libEGL.dll" />
+    <Content Include="QtBinariesWindows\libGLESv2.dll" />
+    <Content Include="QtBinariesWindows\platforms\qminimal.dll" />
+    <Content Include="QtBinariesWindows\platforms\qoffscreen.dll" />
+    <Content Include="QtBinariesWindows\platforms\qwindows.dll" />
+    <Content Include="QtBinariesWindows\Qt5Core.dll" />
+    <Content Include="QtBinariesWindows\Qt5Gui.dll" />
+    <Content Include="QtBinariesWindows\Qt5Multimedia.dll" />
+    <Content Include="QtBinariesWindows\Qt5MultimediaWidgets.dll" />
+    <Content Include="QtBinariesWindows\Qt5Network.dll" />
+    <Content Include="QtBinariesWindows\Qt5OpenGL.dll" />
+    <Content Include="QtBinariesWindows\Qt5Positioning.dll" />
+    <Content Include="QtBinariesWindows\Qt5PrintSupport.dll" />
+    <Content Include="QtBinariesWindows\Qt5Qml.dll" />
+    <Content Include="QtBinariesWindows\Qt5Quick.dll" />
+    <Content Include="QtBinariesWindows\Qt5Sensors.dll" />
+    <Content Include="QtBinariesWindows\Qt5Sql.dll" />
+    <Content Include="QtBinariesWindows\Qt5Svg.dll" />
+    <Content Include="QtBinariesWindows\Qt5WebChannel.dll" />
+    <Content Include="QtBinariesWindows\Qt5WebKit.dll" />
+    <Content Include="QtBinariesWindows\Qt5WebKitWidgets.dll" />
+    <Content Include="QtBinariesWindows\Qt5Widgets.dll" />
+    <Content Include="QtBinariesWindows\zlib1.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="QtBinariesWindows\Syncfusion.WebKitWrapper" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

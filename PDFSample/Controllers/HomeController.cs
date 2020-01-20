@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections;
 using Syncfusion.HtmlConverter;
 using System.IO;
 using System.Web.Mvc;
 using iText.Html2pdf;
-using iText.Kernel.Pdf;
 using Path = System.IO.Path;
 using PdfDocument = Syncfusion.Pdf.PdfDocument;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.html.simpleparser;
 
 namespace PDFSample.Controllers
 {
@@ -34,6 +37,7 @@ namespace PDFSample.Controllers
         {
             return View();
         }
+
         public ActionResult ConvertSF()
         {
             HtmlToPdfConverter converter = new HtmlToPdfConverter();
@@ -41,15 +45,17 @@ namespace PDFSample.Controllers
             setting.WebKitPath = Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/"), "QtBinariesWindows");
             converter.ConverterSettings = setting;
 
-            PdfDocument document = converter.Convert(Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/Assets/Template"), "01.htm"));
+            PdfDocument document = converter.Convert("http://localhost:57519/Assets/Template/01.htm");
+            //PdfDocument document = converter.Convert(Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/Assets/Template"), "01.htm"));
+
 
             MemoryStream ms = new MemoryStream();
             document.Save(ms);
             document.Close(true);
             ms.Position = 0;
 
-            FileStreamResult fileStreamResult = new FileStreamResult(ms,"application/PDF");
-            fileStreamResult.FileDownloadName = "SolicitudAdhesion.pdf";
+            FileStreamResult fileStreamResult = new FileStreamResult(ms, "application/PDF");
+            //fileStreamResult.FileDownloadName = "SolicitudAdhesion.pdf";
 
             return fileStreamResult;
         }
@@ -59,12 +65,13 @@ namespace PDFSample.Controllers
             try
             {
                 //FileStream htmlSource = System.IO.File.Open(Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/Assets/Template"), "01.htm"), FileMode.Open);
-                var html = Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/Assets/Template"), "01.htm");
+                var html =
+                    "http://localhost:57519/Assets/Template/01.htm"; //Path.Combine(System.Web.HttpContext.Current.Server.MapPath("~/Assets/Template"), "01.htm");
                 using (var docStream = new MemoryStream())
                 {
                     //docStream.ReadTimeout = int.MaxValue;
                     //docStream.WriteTimeout = int.MaxValue;
-                    using (var docWriter = new PdfWriter(docStream))
+                    using (var docWriter = new iText.Kernel.Pdf.PdfWriter(docStream))
                     {
                         docWriter.SetCloseStream(false);
                         using (var doc = new iText.Kernel.Pdf.PdfDocument(docWriter))
@@ -75,11 +82,11 @@ namespace PDFSample.Controllers
 
                             docStream.Position = 0;
                             FileStreamResult fileStreamResult = new FileStreamResult(docStream, "application/PDF");
-                            fileStreamResult.FileDownloadName = "SolicitudAdhesion.pdf";
+                            //fileStreamResult.FileDownloadName = "SolicitudAdhesion.pdf";
                             //docStream.Flush(); //Always catches me out
                             //docStream.Position = 0; //Not sure if this is required
 
-                            return fileStreamResult ;
+                            return fileStreamResult;
                         }
                     }
                 }
@@ -100,6 +107,58 @@ namespace PDFSample.Controllers
             catch (Exception e)
             {
                 throw e;
+            }
+        }
+
+        public FileStreamResult ConvertITS()
+        {
+            //using (MemoryStream stream = new MemoryStream())
+            //{
+            //StringReader sr = new StringReader("http://localhost:57519/Assets/Template/01.htm");
+            //Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
+            //iTextSharp.text.pdf.PdfWriter writer = iTextSharp.text.pdf.PdfWriter.GetInstance(pdfDoc, stream);
+            //pdfDoc.Open();
+            //HTMLWorker.ParseToList()//ParseXHtml(writer, pdfDoc, sr);
+            //pdfDoc.Close();
+            //return FileStreamResult(stream.ToArray(), "application/pdf", "Grid.pdf");
+            string file1 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "File1.pdf");
+
+            using (FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                Document doc = new Document(PageSize.A4);
+                iTextSharp.text.pdf.PdfWriter writer = iTextSharp.text.pdf.PdfWriter.GetInstance(doc, fs);
+                doc.Open();
+                //string html = "<table><tr><th>First Name</th><th>Last Name</th></tr><tr><td>Chris</td><td>Haas</td></tr></table>";
+                string html = "http://localhost:57519/Assets/Template/01.htm";
+                using (StringReader sr = new StringReader(html))
+                {
+                    //Create a style sheet
+                    StyleSheet styles = new StyleSheet();
+                    //...styles omitted for brevity
+
+                    //Convert our HTML to iTextSharp elements
+                    ArrayList elements = HTMLWorker.ParseToList(sr, styles);
+                    //Loop through each element (in this case there's actually just one PdfPTable)
+                    foreach (IElement el in elements)
+                    {
+                        //If the element is a PdfPTable
+                        if (el is PdfPTable)
+                        {
+                            //Cast it
+                            PdfPTable tt = (PdfPTable) el;
+                            //Change the widths, these are relative width by the way
+                            tt.SetWidths(new float[] {75, 25});
+                        }
+
+                        //Add the element to the document
+                        doc.Add(el);
+                    }
+                }
+
+                doc.Close();
+                
+                FileStreamResult file = new FileStreamResult(fs, "application/PDF");
+                return file;
             }
         }
     }
