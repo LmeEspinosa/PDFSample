@@ -3,12 +3,15 @@ using System.Collections;
 using Syncfusion.HtmlConverter;
 using System.IO;
 using System.Web.Mvc;
+using System.Web.Razor.Text;
 using iText.Html2pdf;
+using iText.Layout.Element;
 using Path = System.IO.Path;
 using PdfDocument = Syncfusion.Pdf.PdfDocument;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.html.simpleparser;
+using IElement = iTextSharp.text.IElement;
 
 namespace PDFSample.Controllers
 {
@@ -112,54 +115,29 @@ namespace PDFSample.Controllers
 
         public FileStreamResult ConvertITS()
         {
-            //using (MemoryStream stream = new MemoryStream())
-            //{
-            //StringReader sr = new StringReader("http://localhost:57519/Assets/Template/01.htm");
-            //Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
-            //iTextSharp.text.pdf.PdfWriter writer = iTextSharp.text.pdf.PdfWriter.GetInstance(pdfDoc, stream);
-            //pdfDoc.Open();
-            //HTMLWorker.ParseToList()//ParseXHtml(writer, pdfDoc, sr);
-            //pdfDoc.Close();
-            //return FileStreamResult(stream.ToArray(), "application/pdf", "Grid.pdf");
-            string file1 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "File1.pdf");
+            FileStreamResult file = new FileStreamResult(RenderHtmlToPdfStream("http://localhost:57519/Assets/Template/01.htm"), "application/PDF");
+            return file;
+        }
 
-            using (FileStream fs = new FileStream(file1, FileMode.Create, FileAccess.Write, FileShare.None))
-            {
-                Document doc = new Document(PageSize.A4);
-                iTextSharp.text.pdf.PdfWriter writer = iTextSharp.text.pdf.PdfWriter.GetInstance(doc, fs);
-                doc.Open();
-                //string html = "<table><tr><th>First Name</th><th>Last Name</th></tr><tr><td>Chris</td><td>Haas</td></tr></table>";
-                string html = "http://localhost:57519/Assets/Template/01.htm";
-                using (StringReader sr = new StringReader(html))
-                {
-                    //Create a style sheet
-                    StyleSheet styles = new StyleSheet();
-                    //...styles omitted for brevity
 
-                    //Convert our HTML to iTextSharp elements
-                    ArrayList elements = HTMLWorker.ParseToList(sr, styles);
-                    //Loop through each element (in this case there's actually just one PdfPTable)
-                    foreach (IElement el in elements)
-                    {
-                        //If the element is a PdfPTable
-                        if (el is PdfPTable)
-                        {
-                            //Cast it
-                            PdfPTable tt = (PdfPTable) el;
-                            //Change the widths, these are relative width by the way
-                            tt.SetWidths(new float[] {75, 25});
-                        }
+        public static MemoryStream RenderHtmlToPdfStream(string html)
+        {
+            var memoryStream = new MemoryStream();
 
-                        //Add the element to the document
-                        doc.Add(el);
-                    }
-                }
+            var reader = new StringReader(html);
 
-                doc.Close();
-                
-                FileStreamResult file = new FileStreamResult(fs, "application/PDF");
-                return file;
-            }
+            var document = new Document(PageSize.A4, 30, 30, 30, 30);
+            HTMLWorker worker = new HTMLWorker(document);
+            PdfWriter writer = PdfWriter.GetInstance(document, memoryStream);
+            writer.CloseStream = false;
+            document.Open();
+            worker.StartDocument();
+            worker.Parse(reader);
+            worker.EndDocument();
+            worker.Close();
+            document.Close();
+            memoryStream.Seek(0, 0);
+            return memoryStream;
         }
     }
 }
